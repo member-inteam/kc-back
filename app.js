@@ -26,8 +26,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(cors({
-    // origin: 'http://localhost:5173'
-    origin: 'https://nimble-blini-0e1f54.netlify.app'
+    origin: ['http://localhost:5173', 'https://nimble-blini-0e1f54.netlify.app']
 }));
 
 app.use(helmet());

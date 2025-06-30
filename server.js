@@ -11,7 +11,7 @@ dotenv.config({ path: './.env' });
 const app = require('./app');
 const { default: mongoose } = require('mongoose');
 
-const DB = "mongodb://amjadtadmory:<db_password>@ac-eu1ptum-shard-00-00.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-01.u9cao07.mongodb.net:27017,ac-eu1ptum-shard-00-02.u9cao07.mongodb.net:27017/?ssl=true&replicaSet=atlas-10srv4-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
+const DB = "mongodb://staeer:<db_password>@ac-j4mkrpk-shard-00-00.bazlcus.mongodb.net:27017,ac-j4mkrpk-shard-00-01.bazlcus.mongodb.net:27017,ac-j4mkrpk-shard-00-02.bazlcus.mongodb.net:27017/?ssl=true&replicaSet=atlas-10t4co-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0"
     .replace('<db_password>', 'CVyTFczH1nNOnyZ9')
 mongoose.connect(DB, {
     // useNewUrlParser: true,

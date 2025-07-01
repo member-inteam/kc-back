@@ -22,7 +22,7 @@ const { getAllOrders } = require("./controllers/orderController");
 
 
 const app = express()
-
+app.use('/test', testRouter)
 app.enable('trust proxy');
 
 if (process.env.NODE_ENV === 'development') {
@@ -47,7 +47,7 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
 app.use(compression());
 
-app.use('/test', testRouter)
+
 
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/orders', protect, orderRouter)

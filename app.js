@@ -22,8 +22,9 @@ const { getAllOrders } = require("./controllers/orderController");
 
 
 const app = express()
-app.use('/test', testRouter)
+
 app.enable('trust proxy');
+app.use('/test', testRouter)
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))

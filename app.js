@@ -12,6 +12,10 @@ const userRouter = require('./routes/userRoute');
 const orderRouter = require('./routes/orderRoute');
 const productRouter = require('./routes/productRoute');
 const referenceRouter = require('./routes/referenceRoute');
+const testRouter = require('./routes/testRouter');
+
+
+
 const AppError = require("./utils/appError");
 const { getAllOrders } = require("./controllers/orderController");
 
@@ -43,7 +47,7 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
 app.use(compression());
 
-
+app.use('/test', testRouter)
 
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/orders', protect, orderRouter)

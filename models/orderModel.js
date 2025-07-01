@@ -8,50 +8,50 @@ const orderSchema = new mongoose.Schema(
         },
         customer_name: {
             type: String,
-            required: [true, 'An order must belong to a customer']
+            // required: [true, 'An order must belong to a customer']
         },
         phone_number: {
             type: String,
-            required: [true, 'An order must contains at least one phone number']
+            // required: [true, 'An order must contains at least one phone number']
         },
         phone_number_2: {
             type: String
         },
         address: {
             type: String,
-            required: [true, 'An order must have an adress']
+            // required: [true, 'An order must have an adress']
         },
         area: {
             type: String,
-            required: [true, 'An order must have an area']
+            // required: [true, 'An order must have an area']
         },
         show_room: {
             type: String,
-            required: [true, 'An order must belong to an show room']
+            // required: [true, 'An order must belong to an show room']
         },
         sales_man: {
             type: String,
-            required: [true, 'An order must belong to an sales man']
+            // required: [true, 'An order must belong to an sales man']
         },
         branch: {
             type: String,
-            required: [true, 'An order must belong to a branch']
+            // required: [true, 'An order must belong to a branch']
         },
         order_type: {
             type: String,
-            required: [true, 'An order must have a type']
+            // required: [true, 'An order must have a type']
         },
         delivery_type: {
             type: String,
-            required: [true, 'An order must have a delivery type']
+            // required: [true, 'An order must have a delivery type']
         },
         delivery_date: {
             type: String,
-            required: [true, 'An order must have a delivery date']
+            // required: [true, 'An order must have a delivery date']
         },
         technical: {
             type: String,
-            required: [true, 'An order must have a technical']
+            // required: [true, 'An order must have a technical']
         },
         status: {
             type: String,

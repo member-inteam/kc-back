@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema(
         },
         oldID: {
             type: String,
-            required: [true, 'A Product must have an oldID']
+            // required: [true, 'A Product must have an oldID']
         },
         created_at: {
             type: Date,
@@ -36,11 +36,11 @@ const productSchema = new mongoose.Schema(
         },
         price_before_discount: {
             type: Number,
-            required: [true, 'A Product must have a price_before_discount']
+            // required: [true, 'A Product must have a price_before_discount']
         },
         price_after_discount: {
             type: Number,
-            required: [true, 'A Product must have a price_after_discount']
+            // required: [true, 'A Product must have a price_after_discount']
         },
     },
     {

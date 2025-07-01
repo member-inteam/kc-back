@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://nimble-blini-0e1f54.netlify.app']
+    origin: ['http://localhost:5173', 'https://nimble-blini-0e1f54.netlify.app', 'https://roaring-licorice-ed03ab.netlify.app']
 }));
 
 app.use(helmet());
@@ -43,8 +43,10 @@ const limiter = rateLimit({
 });
 // app.use('/api', limiter);
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+app.use(express.json({ limit: '10mb' })); // or larger if needed
+app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cookieParser());
 app.use(compression());
 

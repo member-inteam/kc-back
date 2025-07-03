@@ -68,6 +68,7 @@ const orderSchema = new mongoose.Schema(
                 quantity: Number,
             }
         ],
+        products_notes: String,
         rooms: {
             type: [mongoose.Schema.Types.Mixed], // Accepts array of any shape
         },

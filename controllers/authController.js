@@ -99,4 +99,7 @@ exports.resetPassword = (req, res, next) => {
 
 }
 
+
+exports.updateUser = factory.updateOne(User);
+
 exports.getUser = factory.getOne(User);

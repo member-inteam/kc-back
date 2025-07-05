@@ -79,7 +79,8 @@ const orderSchema = new mongoose.Schema(
 
             }
 
-        ]
+        ],
+        vehicle: String
     },
     {
         toJSON: { virtuals: true },

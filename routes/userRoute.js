@@ -5,6 +5,7 @@ const {
     forgotPassword,
     resetPassword,
     getUser,
+    updateUser,
 } = require('../controllers/authController')
 
 
@@ -22,6 +23,6 @@ router.post('/resetPassword', resetPassword)
 
 router
     .route('/:id')
-    .get(getUser)
+    .patch(updateUser)
 
 module.exports = router

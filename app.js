@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://nimble-blini-0e1f54.netlify.app', 'https://roaring-licorice-ed03ab.netlify.app']
+    origin: ['http://localhost:5173', 'https://nimble-blini-0e1f54.netlify.app', 'https://roaring-licorice-ed03ab.netlify.app', 'http://127.0.0.1:5500']
 }));
 
 app.use(helmet());

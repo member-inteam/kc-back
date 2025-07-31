@@ -31,8 +31,10 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(cors({
-  origin: '*'
+    origin: '*'
 }));
+
+app.options('*name', cors()); // ⬅️ هذا هو الأهم
 
 app.use(helmet());
 
